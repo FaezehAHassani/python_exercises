@@ -13,4 +13,4 @@
 - installed 3.7.6 version and in terminal use: `phyton3.7`
 - `python+tab` will show you all the phyton versions available
 - in terminal use: `quit()` to quit python
-- in terminal use: `python3.7 "atom file name".py`
+- in terminal use: `python3.7 "atom file name".py` or first type `python3.7` then you can type all your commands directly there.
