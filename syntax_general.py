@@ -50,3 +50,14 @@ print("I have", "." * 3, "eggs?") # returns I have ... eggs?
 end1 = "3"
 end2 = "eggs"
 print(end1 + ' ' + end2) # 3 eggs
+
+formatter = "{} {}"
+print(formatter.format(1, 2, 3, 4)) # format uses the formatter style and returns: 1 2
+
+formatter = "{} {} {} {}"  # returns: I am experiencing new languages new life new passion
+print(formatter.format(
+    "I am experiencing",
+    "new languages",
+    "new life",
+    "new passion"
+))
