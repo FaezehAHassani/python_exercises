@@ -61,3 +61,15 @@ print(formatter.format(
     "new life",
     "new passion"
 ))
+
+days = "Mon Tue Wed Thu Fri Sat Sun"
+months = "Jan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"  # \n will print the afterward string in the next line
+print("here is a list of the days in a week:   ", days) # the spaces will be printed exactly; returns: here is a list of the days in a week:    Mon Tue Wed Thu Fri Sat Sun
+print("here is a list of months:              ", months)
+print("""
+1
+2
+hi
+3
+today is Monday
+""")  # """ allows putting several strings in multiple lines, you cannot comment exactly after """ line, returns: each string in a seperate line
