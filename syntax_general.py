@@ -84,3 +84,5 @@ var2 = """
 grocery list:\n\t$tomato\n\t$egg\n\t$onion
 """
 print(var1, var2)
+
+print("\bI'm you") # \a is to call ASCII BEL to give a bip sound when printing: I'm you
