@@ -74,7 +74,7 @@ print("""
 hi
 3
 today is Monday
-""")  # """ allows putting several strings in multiple lines, you cannot comment exactly after """ line, returns: each string in a seperate line
+""")  # """ allows putting several strings in multiple lines, you cannot comment exactly after """ line, returns: each string in a seperate line; you may use ''' instead of """
 
 #### escape double/single quote inside a string, various ways of using """
 print("I am 6'2\" tall") # returns: I am 6'2" tall
@@ -86,3 +86,17 @@ grocery list:\n\t$tomato\n\t$egg\n\t$onion
 print(var1, var2)
 
 print("\bI'm you") # \a is to call ASCII BEL to give a bip sound when printing: I'm you
+
+# asking questions
+print("how old are you?", end='') # end='' don't let parser go to the next line
+age = input() # it will wait until you enter a vlaue for your age
+print("how tall are you?" , end='')
+height = input()
+print("what is your weight?", end='')
+weight = input()
+print(f"So, you are {age} old, {height} tall and {weight} heavy")
+
+x = int(input()) # this command will get a val;ue from you and convert it to an integer so you can do math on the value
+
+x = input("what is your name:") # entered faezeh
+print(f"Hello" + "." * 10 + x) # returns: Hello..........faezeh
