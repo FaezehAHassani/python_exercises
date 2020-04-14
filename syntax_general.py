@@ -100,3 +100,7 @@ x = int(input()) # this command will get a val;ue from you and convert it to an 
 
 x = input("what is your name:") # entered faezeh
 print(f"Hello" + "." * 10 + x) # returns: Hello..........faezeh
+
+# equivalent for using end='' in asking questions in above commands
+age = input("how old are you? ")
+print(f"if you are {age} old, you are still young")
