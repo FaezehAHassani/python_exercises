@@ -33,3 +33,7 @@
 |\\v                                                       |ASCII vertical tab                        |
 |\\000                                                     |character with octal value 000            |
 |\\xhh                                                     |character with hex value hh               |
+
+# pydoc
+- `python3.7 -m pydoc` provides a help documentation
+- `python3.7 -m file/os/sys` are a few documentation
