@@ -8,3 +8,4 @@
 - you can replace any four variable (string/integer) in your python script argument
   - for example:
     `python3.7 syntax_argument.py apple orange peach grape`
+- You **CANNOT** call two separate argv command within one script file
