@@ -37,3 +37,4 @@
 # pydoc
 - `python3.7 -m pydoc` provides a help documentation
 - `python3.7 -m file/os/sys` are a few documentation
+- `python3.7 -m pydoc open` gives you information on open() command
