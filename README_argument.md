@@ -14,3 +14,11 @@
  - `txt = open("sample.txt", "r")`
  - `print(txt.read())`
  - `print(txt.close)`
+
+# remember below commands
+- `close`: closes file
+-  `read`: reads the file content
+- `readline`: reads just one line of the text
+- `truncate`: empties the file
+- `write('stuff')`: writes "stuff" to the file
+- `seek(0)`: moves read/write location to the file beginning
