@@ -13,7 +13,7 @@
  - `python3.7`
  - `txt = open("sample.txt", "r")`
  - `print(txt.read())`
- - `print(txt.close)`
+ - `print(txt.close)` or `txt.close()`
 
 # remember below commands
 - `close`: closes file
