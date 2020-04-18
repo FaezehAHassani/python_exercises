@@ -1,3 +1,3 @@
-This is a test file.
-
-Let's see how we can read/write to this file.
+I just deleted my test.txt
+I want to write new stuff in it
+It is very cool
