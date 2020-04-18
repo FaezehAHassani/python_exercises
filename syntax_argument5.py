@@ -9,7 +9,7 @@ print("if you do want that, hit RETURN.")
 input("?")
 
 print("opening the file...")
-target = open(filename, "w")
+target = open(filename, "w") # "w" explicitly ask you to open a file in "write" mode, if use "r" meant for opening only, you need not to use truncate; "a" means open and amend the file
 
 print("truncating the file, Goodbye!")
 target.truncate()
