@@ -38,3 +38,9 @@
 - `python3.7 -m pydoc` provides a help documentation
 - `python3.7 -m file/os/sys` are a few documentation
 - `python3.7 -m pydoc open` gives you information on open() command
+
+# make a new file through terminal
+- `echo "This is my original2 file." > original2.txt`
+
+# print the contents of above created original2.txt file in the terminal
+- `cat original2.txt`
