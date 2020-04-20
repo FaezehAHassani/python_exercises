@@ -8,7 +8,8 @@ script, from_file, to_file = argv  # remember to write this when running in term
 
 print(f"copying from {from_file} to {to_file}.")
 
-# the below two lines can be replaced by:  indata = open(from_file).read()
+# the below two lines can be replaced by:  indata = open(from_file).read() => if you use this, you don't need to do in_file.close()
+#indata = open(from_file).read()
 in_file = open(from_file) # open from_file
 indata = in_file.read()   # read from_fle
 
