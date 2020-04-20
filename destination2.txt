@@ -1,0 +1,5 @@
+I want to copy/write the contents of this file to my destination.txt file
+
+1- I am learning new languages
+2- Daily learning is important
+3- Try to learn new things each day
