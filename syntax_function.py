@@ -10,3 +10,8 @@ print_two("Zed", "Shaw")
 def print_two_again(arg1, arg2):
     print(f"arg1: {arg1}, arg2: {arg2}")
 print_two_again("Zed", "Shaw")
+
+# define a function named "print_one" that gets one argument: "First!" and returnts arg1: First!
+def print_one(arg1):
+    print(f"arg1: {arg1}")
+print_one("First!")
