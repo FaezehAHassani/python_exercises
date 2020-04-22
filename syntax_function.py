@@ -15,3 +15,8 @@ print_two_again("Zed", "Shaw")
 def print_one(arg1):
     print(f"arg1: {arg1}")
 print_one("First!")
+
+# define a function named "print_none" that gets nothing and returnts arg1: I got nothin'.
+def print_none():
+    print("I git nothin'.")
+print_none()
