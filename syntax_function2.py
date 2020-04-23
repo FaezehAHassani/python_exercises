@@ -21,16 +21,15 @@ cheese_and_crackers(amount_of_cheese + (100 / 3), amount_of_crackers - (30 * 2))
 def full_name(first_name, last_name):
     print(f"This is your first name: {first_name}.\n")
     print(f"This is your last name: {last_name}.\n")
-    print("Your complete name is:")
+    print(f"Your complete name is: {first_name} {last_name} ")
 
 surname = "liam"
 family = "nelson"
-full_name(surname, family)
-
-print(input("Your title:"))
+complete_name = full_name(surname, family)
 
 def title_full_name(title, complete_name):
-    print(f"Your title ({title}) is added to your {complete_name}")
-    complete_name_with_title = title_full_name(title, complete_name)
+    complete_name = full_name(surname, family)
+    print(f"Your fulle name with title is: {title} {complete_name}")
 
-print(f"Your full name with title is: {complete_name_with_title}")
+your_title = input("Your title is:")
+title_full_name(your_title, complete_name)
