@@ -14,3 +14,6 @@ cheese_and_crackers(amount_of_cheese, amount_of_crackers)
 
 print("We can even do maths for a function values")
 cheese_and_crackers(10 + 20, 10 / 2)
+
+print("We can even combine variables and numbers for a function values")
+cheese_and_crackers(amount_of_cheese + (100 / 3), amount_of_crackers - (30 * 2))
