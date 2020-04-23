@@ -11,3 +11,6 @@ print("Let's give variables to the function")
 amount_of_cheese = 10
 amount_of_crackers = 30
 cheese_and_crackers(amount_of_cheese, amount_of_crackers)
+
+print("We can even do maths for a function values")
+cheese_and_crackers(10 + 20, 10 / 2)
