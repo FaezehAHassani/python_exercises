@@ -9,7 +9,7 @@
   - for example:
     `python3.7 syntax_argument.py apple orange peach grape`
 - You **CANNOT** call two separate argv command within one script file
-- You can directly write below lines in puthon3.7 through terminal
+- You can directly write below lines in python3.7 through terminal
  - `python3.7`
  - `txt = open("sample.txt", "r")`
  - `print(txt.read())`
