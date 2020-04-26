@@ -26,7 +26,8 @@ print("Let's print three lines, line by line:")
 current_line = 1  # later this may be replaced with a for loop!
 print_a_line(current_line, current_file)
 
-current_line = current_line + 1
+# current_line = current_line + 1 instead of this can use below line
+current_line += 1
 print_a_line(current_line, current_file)
 
 current_line = current_line + 1
