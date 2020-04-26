@@ -11,7 +11,7 @@ def rewind(f):  # rewind is like rewinding a tape/ go back to the tape beginning
     f.seek(0) # remmber seek(0) takes us to the first line of the sript
 
 def print_a_line(line_count,f):
-    print(line_count, f.readline())
+    print(line_count, f.readline(), end = "") # end = "" avoid adding an extra spacing between the printed lines but if you remove it you add an extra spacing
 
 current_file = open(input_file)
 
