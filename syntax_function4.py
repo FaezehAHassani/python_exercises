@@ -17,7 +17,7 @@ def divide(a, b):
     print(f"dividing {a} / {b}")
     return a / b
 
-print("let's do some maths with these functiona!")
+print("let's do some math with these functions!")
 
 age = add(30, 12.5)
 height = subtract(90, 190)
@@ -30,4 +30,4 @@ print("here is a puzzle for you:")
 
 what = add(age, subtract(height, multiply(weight, divide(iq, 2))))
 
-print("That becomes:", what, "can you do it by hand?") # when not using f" " no need to use {} for the variable
+print("that becomes:", what, "can you do it by hand?") # when not using f" " no need to use {} for the variable
