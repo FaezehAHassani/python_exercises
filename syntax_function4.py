@@ -21,7 +21,13 @@ print("let's do some maths with these functiona!")
 
 age = add(30, 12.5)
 height = subtract(90, 190)
-weight = multiplying(13.4, 21.88)
+weight = multiply(13.4, 21.88)
 iq = divide(30, 0.5)
 
 print(f"Age: {age}, height: {height}, weight: {weight}, IQ: {iq}")
+
+print("here is a puzzle for you:")
+
+what = add(age, subtract(height, multiply(weight, divide(iq, 2))))
+
+print("That becomes:", what, "can you do it by hand?") # when not using f" " no need to use {} for the variable
