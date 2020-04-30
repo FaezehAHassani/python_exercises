@@ -10,6 +10,7 @@
 - Unicode is a universal encoding that contains 32 bit (= 8 bytes) and can make 2^32 = 4294967295 characters
 - To save space better to encode with 8 bits and then move to 16/32 bits if necessary
  - utf-8 (Unicode transformation format 8 bits) do this.
+ - the encoding for utf-16 makes longer raw_bytes, and big5 gives error since it cannot encode some of the characters
 - DBES => decode bytes encode strings
 
   **in terminal**
@@ -18,3 +19,5 @@
   >>> utf_string="فارسی"
   >>> raw_bytes.decode() => returns "فارسی"
   >>> utf_string.encode() => returns b'\xd9\x81\xd8\xa7\xd8\xb1\xd8\xb3\xdb\x8c'
+  >>> raw_bytes==utf_string.encode() => returns True
+  >>> utf_string==raw_bytes.decode() => returns True
