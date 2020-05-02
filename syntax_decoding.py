@@ -1,20 +1,15 @@
-# decode a script by using UTF-8 decoding with "strict" error
-
+# decode a text file in UTF-8 to strings
 #import sys
-#script, language_file.agrv
+#script, language_file, error = sys.agrv
 
 def main(language_file):
     line = language_file.readline()
+    print(line.encode('utf8'))
     if line:
-       return main(language_file)
+      return main(language_file)
 
-def print_line(line, errors):
-    #next_lang = line.strip()
-    cooked_string = next_lang.decode()
-    raw_bytes = cooked_string.encode()
-    print(cooked_string, "<==>", raw_bytes)
-    #print(cooked_string)
 
-languages = open("languages3.txt")
 
-main(languages) # this is used for making a loop unless if line: returns nothing and this loop is stopped
+languages = open("languages2.txt")
+
+main(languages)
