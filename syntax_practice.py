@@ -30,3 +30,10 @@ beans, jars, crates = secret_formula(start_point) # this will literaly assign je
 print("with a starting point of {}". format(start_point))
 # it's just like f""
 print(f"we'd have {beans} beans, {jars} jars, and {crates} crates")
+
+start_point = start_point /10
+
+print("we can also do that this way:")
+formula = secret_formula(start_point)
+# this is an easy way to apply a list to a format starting
+print("we'd have {} beans, {} jars, and {} crates.".format(*formula))
