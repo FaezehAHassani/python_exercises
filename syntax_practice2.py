@@ -1,39 +1,13 @@
-print("Let's practice everything.")
-print('You\'d need to know \'bout escapses with \\ that do:')
-print('\n newlines and  \t tabs')
+def break_words(stuff):
+    """This function will bvreak up words for us."""
+    words = stuff.split(' ')
+    return words
 
-poem = """
-\tThe lovely world
-with logic so firmly planted
-cannot discern \n the needs of love
-nor comprehend passion from intuition
-and requires an explanation
-\n\t\t where there is none.
-"""
-print("---------")
-print(poem)
-print("---------")
+def sort_words(words):
+    """Sorts the words."""
+    return sorted(words)
 
-five = 10 - 2 + 3 - 6
-print(f"This should be five: {five}")
-
-def secret_formula(started):
-    jelly_beans = started * 500
-    jars = jelly_beans / 1000
-    crates = jars / 100
-    return jelly_beans, jars, crates
-
-start_point = 10000
-beans, jars, crates = secret_formula(start_point) # this will literaly assign jelly_beans value to beans
-
-# remember this is another way to format a string
-print("with a starting point of {}". format(start_point))
-# it's just like f""
-print(f"we'd have {beans} beans, {jars} jars, and {crates} crates")
-
-start_point = start_point /10
-
-print("we can also do that this way:")
-formula = secret_formula(start_point)
-# this is an easy way to apply a list to a format starting
-print("we'd have {} beans, {} jars, and {} crates.".format(*formula))
+def print_first_word(words):
+    """Prints the first word after popping it off."""
+    word = words.pop(0)
+    print(word)
