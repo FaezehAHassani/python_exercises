@@ -14,13 +14,13 @@ def print_first_word(words):
 
 def print_last_word(words):
     """Prints last worf after popping it off."""
-    word = word.pop(-1)
+    word = words.pop(-1)
     print(word)
 
 def sort_sentence(sentence):
     """Takes in a full sentenceand returns the sorted words."""
     words = break_words(sentence)
-    return sort_words(sentence)
+    return sort_words(words)
 
 def print_first_and_last(sentence):
     """Prints the first and last words of the sentence."""
