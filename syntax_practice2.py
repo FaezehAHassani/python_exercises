@@ -1,5 +1,5 @@
 def break_words(stuff):
-    """This function will bvreak up words for us."""
+    """This function will break up words for us."""    # this line is called documentation comments
     words = stuff.split(' ')
     return words
 
