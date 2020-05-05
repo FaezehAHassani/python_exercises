@@ -1,6 +1,7 @@
 print("How old are you?", end=' ')
 age = input()
 print("How tall are you?", end=' ')
+height = input()
 print("How much do you weight?", end=' ')
 weight = input()
 
@@ -11,14 +12,14 @@ script, filename = argv
 txt = open(filenme)
 
 print("Here's your file {filename}:")
-print(tx.read())
+print(txt.read())
 
 print("Type the filename again:")
 file_again = input("> ")
 
 txt_again = open(file_again)
 
-print(txt_again_read())
+print(txt_again.read())
 
 
 print('Let\'s practice everything.')
@@ -35,11 +36,11 @@ and requires an explanation
 
 print("--------------")
 print(poem)
-print(--------------")
+print("--------------")
 
 
-five = 10 - 2 + 3 -
-print(f"This should be five: {five}"
+five = 10 - 2 + 3 - 6
+print(f"This should be five: {five}")
 
 def secret_formula(started)
     jelly_beans = started * 500
