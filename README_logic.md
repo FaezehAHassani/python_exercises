@@ -2,7 +2,7 @@
 - and
 - or
 - not
-- != not equal
+- != not equal no longer python uses <> instead of !=
 - == equal
 - >= greater than equal
 - <= less than equal
