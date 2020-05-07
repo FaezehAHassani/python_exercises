@@ -14,3 +14,5 @@ print(not (True and False)) # True
 print(not ( 1 == 1 and 0 != 1)) # False
 print(not (10 == 1 or 1000 == 1000)) # False
 print(not (1 != 10 or 3 == 4)) # False
+print('\n')
+print(not ("testing" == "testing" and "Zed" == "Cool Guy")) # True
