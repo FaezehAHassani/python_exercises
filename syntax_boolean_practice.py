@@ -21,3 +21,6 @@ print(not ("testing" == "testing" and "Zed" == "Cool Guy")) # True
 print(1 == 1 and (not ("testing" == 1 or 1 == 0))) # True
 print("chunky" == "bacon" and not (3 == 4 or 3 == 3)) # False
 print(3 == 3 and (not ("testing" == "testing" or "Python" == "Fun"))) # False
+print('\n')
+print(False and 1) # return False => DIFFERENT CASE
+print(True and 1) # returen  1 => DIFFERENT CASE
