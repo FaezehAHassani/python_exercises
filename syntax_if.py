@@ -17,3 +17,9 @@ dogs += 5  # this means dogs = dogs + 5
 
 if people >= dogs:
     print("People are greater than or equal to dogs.")
+
+if people <= dogs:
+    print("People are leass than or equal to dogs.")
+
+if people == dogs:
+    print("People are dogs.")
