@@ -23,3 +23,8 @@ if people <= dogs:
 
 if people == dogs:
     print("People are dogs.")
+
+cats -= 14
+
+if cats != dogs:
+    print("cats are not equal to dogs") 
