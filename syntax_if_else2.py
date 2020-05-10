@@ -31,4 +31,8 @@ elif door == "2":
     if insanity == "1":
         print("Your body survives powered by a mind of jello.")
     elif insanity == "2":
-        print()
+        print("Good job!")
+    else: print("The insanity rots your eyes into a pool of muck.")
+
+else:
+    print("You must stumble around and fall on a knife and die. Good job!")
