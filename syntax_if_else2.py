@@ -14,8 +14,21 @@ if door == "1":
     bear = input(">")
     if bear == "1":
         print("The bear eats your face off. Good job!")
-    elif bear == "2"
-    print("The bear eats your legs off. Good job!")
+    elif bear == "2":
+        print("The bear eats your legs off. Good job!")
     else:
         print(f"Well, doing {bear} is better.")
         print("Bear runs away.")
+
+elif door == "2":
+    print("You stare into the endless abyss at Cthulhu's retina.")
+    print("1. Blueberries.")
+    print("2. Yello jacket clothespins.")
+    print("3. understanding revolvers yelling melodies.")
+
+    insanity = input(">")
+
+    if insanity == "1":
+        print("Your body survives powered by a mind of jello.")
+    elif insanity == "2":
+        print()
