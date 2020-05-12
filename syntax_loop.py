@@ -3,6 +3,7 @@
 the_count = [ 1, 2, 3, 4, 5]  # making a list
 fruits = ['apples', 'oranges', 'pears', 'apricots']
 change = [1, 'pennies', 2, 'dimes', 3, 'quarters']
+netted_list = [[1, 2, 3], ['me', 'you', 'them']] # make a list in a list
 
 # for-loop
 
@@ -14,6 +15,10 @@ for fruit in fruits:
 
 for i in change:
     print(f"I got {i}")
+
+for item in netted_list:
+    print(f"{item} shows how to list in a list.")  # this will return: [1, 2, 3] shows how to list in a list.
+                                                                     # ['me', 'you', 'them'] shows how to list in a list.
 
 elements = []  # make an empty list
 
