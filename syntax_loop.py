@@ -23,3 +23,8 @@ for i in range(0, 6):  # put the numbers in the range of 0 t0 6 inside variable 
 
 for i in elements:
     print(f"Element was: {i}")
+
+digits = []
+
+for digits in range(0, 6):
+    print(f" Directly add {digits} to empty list")
