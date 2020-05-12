@@ -1,24 +1,13 @@
-# if else-statement
+# list and loop
 
-people = 30
-cars = 40
-trucks = 15
+the_count = [ 1, 2, 3, 4, 5]
+fruits = ['apples', 'oranges', 'pears', 'apricots']
+change = [1, 'pennies', 2, 'dimes', 3, 'quarters']
 
-if cars > people:
-    print("We should take cars.")
-elif cars < people:
-    print("We should not take cars.")
-else:
-    print("We can't decide")
+# for-loop
 
-if trucks > cars:
-    print("That's too many trucks.")
-elif trucks < cars:
-    print("Maybe we could take the trucks.")
-else:
-    print("We still can't decide. ")
+for number in the_count:   # basically putting "the_count" contents in variable "number"
+    print(f"This is count {number}")
 
-if people > trucks:
-    print("Alright, let's just take the trucks.")
-else:
-    print("Fine, let's stay home then.")
+for fruit in fruits:
+    print(f"A fruit of type {fruit}")
