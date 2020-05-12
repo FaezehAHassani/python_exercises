@@ -1,5 +1,7 @@
 # list
 
+https://www.programiz.com/python-programming/list
+
 _ex1:_
 
 my_list = [1, 2, 3, 4]
