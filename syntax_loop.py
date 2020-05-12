@@ -20,3 +20,6 @@ elements = []  # make an empty list
 for i in range(0, 6):  # put the numbers in the range of 0 t0 6 inside variable "i"
     print(f"Adding {i} to the list.")
     elements.append(i) # append will add contents in "i" to the empty list "elements"
+
+for i in elements:
+    print(f"Element was: {i}")
