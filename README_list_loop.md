@@ -1,6 +1,6 @@
 # list
 
-https://www.programiz.com/python-programming/list
+https://www.programiz.com/python-programming/list  up to Python List Methods
 
 _ex1:_
 
@@ -78,6 +78,13 @@ my_nested_list.pop() => pop() deletes the last index
 print(my_nested_list) **returns [3, 7, [9, 0], 9, 7]]**
 my_nested_list.clear()
 print(my_nested_list) **returns []**
+
+# delete by using slices
+my_nested_list = [[1 , 3], 3, 5, 7, [9, 0], 9, 7, 5]
+my_nested_list[2:3] = []
+print(my_nested_list) **returns [[1 , 3], 3, 7, [9, 0], 9, 7, 5]**
+my_nested_list[2:5] = []
+print(my_nested_list) **returns [[1 , 3], 3, 7, 5]**
 
 _ex3:_
 
