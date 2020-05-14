@@ -34,7 +34,7 @@ print(my_list) **returns [0, 2, 3, 4, 6]**
 # adding several index to the end of list
 my_list = [0, 2, 3, 4, 6]
 my_list.extend([8, 0, 3])
-print(my_list) **returns [0, 2, 3, 4, 6, 8, 0, 3]
+print(my_list) **returns [0, 2, 3, 4, 6, 8, 0, 3]**
 
 _ex2:_
 
@@ -45,3 +45,12 @@ my_nested_list =[[1 , 3], [9, 0]]
 print(my_nested_list[0][1]) **returns 3**
 
 print(my_nested_list[1][0]) **returns 9**
+
+# using of +
+my_nested_list =[[1 , 3], [9, 0]]
+print(my_nested_list + [9, 7, 5]) **returns [[1 , 3], [9, 0], 9, 7, 5]**
+
+_ex3:_
+
+# multiple same index
+print(["re"] * 3) **returns ['re', 're', 're']
