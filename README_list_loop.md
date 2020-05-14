@@ -60,6 +60,15 @@ my_nested_list = [[1 , 3], 3, [9, 0], 9, 7, 5]
 my_nested_list[2:2] = [5, 7]  **=> put 5, 7 in the slice 2**
 print(my_nested_list) **returns [[1 , 3], 3, 5, 7, [9, 0], 9, 7, 5]**
 
+# delete one index or multiple index from a list
+my_nested_list = [[1 , 3], 3, 5, 7, [9, 0], 9, 7, 5]
+del my_nested_list[1]
+print(my_nested_list) **returns [[1 , 3], 5, 7, [9, 0], 9, 7, 5]**
+del my_nested_list[3:6]
+print(my_nested_list) **returns [[1 , 3], 5, 7, 5]**
+del my_nested_list
+print(my_nested_list) **gives an error that name 'my_nested_list' is not defined**
+
 _ex3:_
 
 # multiple same index
