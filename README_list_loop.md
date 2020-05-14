@@ -50,6 +50,16 @@ print(my_nested_list[1][0]) **returns 9**
 my_nested_list =[[1 , 3], [9, 0]]
 print(my_nested_list + [9, 7, 5]) **returns [[1 , 3], [9, 0], 9, 7, 5]**
 
+# insert an index in the slices of a my_list: e.g. for the my_nested_list = [[1 , 3], [9, 0], 9, 7, 5] => the slices numbers are 0 1 2 3 4
+my_nested_list = [[1 , 3], [9, 0], 9, 7, 5]
+
+my_nested_list.insert(1,3)   **=> put 3 in the slice 1**
+print(my_nested_list) **returns [[1 , 3], 3, [9, 0], 9, 7, 5]**
+
+my_nested_list = [[1 , 3], 3, [9, 0], 9, 7, 5]
+my_nested_list[2:2] = [5, 7]  **=> put 5, 7 in the slice 2**
+print(my_nested_list) **returns [[1 , 3], 3, 5, 7, [9, 0], 9, 7, 5]**
+
 _ex3:_
 
 # multiple same index
