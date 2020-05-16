@@ -104,3 +104,25 @@ print(["re"] * 3) **returns ['re', 're', 're']
 - sort() - Sort items in a list in ascending order
 - reverse() - Reverse the order of items in the list
 - copy() - Returns a shallow copy of the list
+
+_ex4:_
+my_list = [8, 0, 2, 10, 6, 8, 4, 7]
+
+print(my_list.index(8)) **returns 0 that is the index number for first 8**
+
+my_list.sort()
+print(my_list) **returns [0, 2, 4, 6, 7, 8, 8, 10]**
+
+my_list.reverse()
+print(my_list) **returns [10, 8, 8, 7, 6, 4, 2, 0]**
+
+_ex5:_
+pow2 = [2 ** x for x in range(10)] comment: 2 ** x is 2^x
+print(pow2)  **returns [1, 2, 4, 8, 16, 32, 64, 128, 256, 512]**
+
+**is equivalent to:**
+
+pow2 = []
+for x in range(10):
+   pow2.append(2 ** x)
+pow2 **returns [1, 2, 4, 8, 16, 32, 64, 128, 256, 512]**
