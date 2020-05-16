@@ -1,6 +1,6 @@
 # list
 
-https://www.programiz.com/python-programming/list  up to Python List Methods
+https://www.programiz.com/python-programming/list  
 
 _ex1:_
 
@@ -152,3 +152,12 @@ print('p' in my_list) **returns True**
 print('a' in my_list) **returns False**
 
 print('c' not in my_list) **returns True**
+
+_ex10: for loop_
+
+for fruit in ['apple','banana','mango']:
+    print("I like",fruit)
+**returns
+I like apple
+I like banana
+I like mango
