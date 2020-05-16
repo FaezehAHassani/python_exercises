@@ -135,5 +135,6 @@ _ex7:_
 odd = [x for x in range(20) if x % 2 == 1]
 odd **returns [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]**
 
->>> [x+y for x in ['Python ','C '] for y in ['Language','Programming']]
-['Python Language', 'Python Programming', 'C Language', 'C Programming']
+_ey8:_
+add_value = [x+y for x in ['Python ','C '] for y in ['Language','Programming']]
+print(add_value) **returns ['Python Language', 'Python Programming', 'C Language', 'C Programming']**
