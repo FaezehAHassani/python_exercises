@@ -116,7 +116,8 @@ print(my_list) **returns [0, 2, 4, 6, 7, 8, 8, 10]**
 my_list.reverse()
 print(my_list) **returns [10, 8, 8, 7, 6, 4, 2, 0]**
 
-_ex5:_
+_ex5: ways to create list_
+
 pow2 = [2 ** x for x in range(10)] comment: 2 ** x is 2^x
 print(pow2)  **returns [1, 2, 4, 8, 16, 32, 64, 128, 256, 512]**
 
@@ -127,14 +128,14 @@ for x in range(10):
    pow2.append(2 ** x)
 pow2 **returns [1, 2, 4, 8, 16, 32, 64, 128, 256, 512]**
 
-_ex6:_
+_ex6: ways to create list_
 pow2 = [2 ** x for x in range(10) if x > 5]
 pow2 **returns [64, 128, 256, 512]**
 
-_ex7:_
+_ex7: ways to create list_
 odd = [x for x in range(20) if x % 2 == 1]
 odd **returns [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]**
 
-_ey8:_
+_ey8: ways to create list_
 add_value = [x+y for x in ['Python ','C '] for y in ['Language','Programming']]
 print(add_value) **returns ['Python Language', 'Python Programming', 'C Language', 'C Programming']**
