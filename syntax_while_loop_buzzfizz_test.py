@@ -4,7 +4,7 @@ numbers = [2, 15, 9, 6, 5]
 
 j = 0
 
-while j < 5:
+while j < len(numbers)-1:
     if numbers[j] % 15 == 0:
         print("FizzBuzz")
 
