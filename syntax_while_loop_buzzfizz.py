@@ -16,7 +16,7 @@ print("Let's go for the FizzBuzz test!")
 
 j = 0
 
-while j < 100:
+while j < len(numbers)-1:
     if numbers[j] % 15 == 0:
         print("FizzBuzz")
 
