@@ -48,3 +48,7 @@ def bear_room():
             dead("Well that was tasty!")
         else:
             cthulhu_room()
+
+def dead(why):
+    print(why, "Good job!")
+    exit(0)  # this will exit the .py script
