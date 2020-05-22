@@ -15,3 +15,21 @@ while True: break
 
 # define a class that is "Person" and assign an object that is "object" to it
 class Person(object)
+
+# power of
+2 ** 4 == 16
+
+# floor division
+2 // 4 == 0 # divide integer and return real part only
+
+x = 1
+x += 1 # (x = x + 1)returns x = 2
+
+x = 1
+x -= 1 # (x = x - 1) returns x = 0
+
+x = 2
+x *= 2 # (x = x * 2) returns x = 4
+
+x = 2
+x /= 2 # (x = x / 2) returns x = 1
