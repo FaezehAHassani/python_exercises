@@ -32,4 +32,4 @@ x = 2
 x *= 2 # (x = x * 2) returns x = 4
 
 x = 2
-x /= 2 # (x = x / 2) returns x = 1
+x /= 2 # (x = x / 2) returns x = 1.0
