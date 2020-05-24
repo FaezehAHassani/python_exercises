@@ -24,3 +24,5 @@ print(stuff[1])
 print(stuff[-1])
 print(stuff.pop())
 print(' '.join(stuff))  # reomoves ' ' from stuff list and print all indexes one after another with a space in between, if I put '' they will be printed without space
+print(stuff)
+print('#'.join(stuff[3:5])) # returns Telephone#Light 
