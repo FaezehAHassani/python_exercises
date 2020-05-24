@@ -21,3 +21,5 @@ print("There we go: ", stuff)
 print("Let's do some things with stuff.")
 
 print(stuff[1])
+print(stuff[-1])
+print(stuff.pop())
