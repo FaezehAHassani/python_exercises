@@ -74,7 +74,7 @@ my_nested_list.remove([1,3])
 print(my_nested_list) **returns [3, 5, 7, [9, 0], 9, 7, 5]]**
 my_nested_list.pop(1)
 print(my_nested_list) **returns [3, 7, [9, 0], 9, 7, 5]]**
-my_nested_list.pop() => pop() deletes the last index
+my_nested_list.pop() => pop() take the last index and print it, **returns 5**
 print(my_nested_list) **returns [3, 7, [9, 0], 9, 7]]**
 my_nested_list.clear()
 print(my_nested_list) **returns []**
