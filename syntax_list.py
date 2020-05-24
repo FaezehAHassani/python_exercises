@@ -15,3 +15,9 @@ while len(stuff) != 10:
     print("Adding: ", next_one)
     stuff.append(next_one) # adds next_one list to the end of stuff list
     print(f"There are {len(stuff)} items now.")
+
+print("There we go: ", stuff)
+
+print("Let's do some things with stuff.")
+
+print(stuff[1])
