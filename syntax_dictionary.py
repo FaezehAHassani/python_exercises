@@ -24,3 +24,5 @@ stuff[1] = "Wow"
 stuff[2] = "Neato"
 print(stuff[1])
 print(stuff[2])
+
+stuff # returns {'name': 'Zed', 'age': 39, 'height': 74, 'city': 'SF', 1: 'Wow', 2: 'Neato'}
