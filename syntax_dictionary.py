@@ -79,3 +79,9 @@ for state, abbrev in list(states.items()):  # here we difned two variable 'abbre
 print('-' * 10)
 for abbrev, city in list(cities.items()):
     print(f"{abbrev} has the city {city}")
+
+# both of above
+print('-' * 10)
+for state, abbrev in list(states.items()):
+    print(f"{state} is abbreviated {abbrev}")
+    print(f"\t and has the city {cities[abbrev]}")
