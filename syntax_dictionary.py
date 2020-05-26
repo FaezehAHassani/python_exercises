@@ -71,5 +71,11 @@ print("Michigan state has: ", cities[states['Michigan']])
 print("Florida state has: ", cities[states['Florida']])
 
 # print every state abbreviation
-for abbrev, city in list(cities.items()):  # here we difned two variable 'abbrev' and 'city'
+print('-' * 10)
+for state, abbrev in list(states.items()):  # here we difned two variable 'abbrev' and 'city'
+    print(f"{state} is abbreviated {abbrev}")
+
+# print every city in state abbreviation
+print('-' * 10)
+for abbrev, city in list(cities.items()):
     print(f"{abbrev} has the city {city}")
