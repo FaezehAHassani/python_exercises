@@ -32,3 +32,27 @@ del stuff[1]
 del stuff[2]
 
 stuff # returns {'name': 'Zed', 'age': 39, 'height': 74}
+
+# example 3
+
+# create a mapping of state to abbriviation
+states = {
+'Oregon': 'OR',
+'Florida': 'FL',
+'California': 'CA',
+'New York': 'NY',
+'Michigan': 'MI'
+}
+
+# create a basic set of states and some cities in them
+cities = {
+'CA': 'San Francisco',
+'MI': 'Detroit',
+'Fl': 'Jacksoville'
+}
+
+# add more cities
+cities['NY'] = 'New York',
+cities['OR'] = 'Portland'
+
+print('-' * 10)  # returns ----------
