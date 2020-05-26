@@ -56,3 +56,11 @@ cities['NY'] = 'New York',
 cities['OR'] = 'Portland'
 
 print('-' * 10)  # returns ----------
+
+print("New York state has: ", cities['NY'])
+print("OR state has: ", cities['OR'])
+
+# print some states
+print('-' * 10)
+print("Michigan's abbreviation is: ", states['Michigan'])
+print("Florida's abbreviation is: ", states['Florida'])
