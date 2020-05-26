@@ -48,11 +48,11 @@ states = {
 cities = {
 'CA': 'San Francisco',
 'MI': 'Detroit',
-'Fl': 'Jacksoville'
+'FL': 'Jacksoville'
 }
 
 # add more cities
-cities['NY'] = 'New York',
+cities['NY'] = 'New York'
 cities['OR'] = 'Portland'
 
 print('-' * 10)  # returns ----------
@@ -64,3 +64,12 @@ print("OR state has: ", cities['OR'])
 print('-' * 10)
 print("Michigan's abbreviation is: ", states['Michigan'])
 print("Florida's abbreviation is: ", states['Florida'])
+
+# do t by using the states then cities dictionary
+print('-' * 10)
+print("Michigan state has: ", cities[states['Michigan']])
+print("Florida state has: ", cities[states['Florida']])
+
+# print every state abbreviation
+for abbrev, city in list(cities.items()):  # here we difned two variable 'abbrev' and 'city'
+    print(f"{abbrev} has the city {city}")
