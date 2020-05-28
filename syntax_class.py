@@ -28,11 +28,11 @@ class Song(object):
             print(line)
 
 happy_birthday = Song(["Happy birthday to you",
-                        "I don't eant to get sued",
-                        "so I'll stop rigth there!"])
+                        "I don't want to get sued",
+                        "So I'll stop rigth there!"])
 
 bulls_on_parade = Song(["They rally around the family",
-                         "with pockets full of shells"])
+                         "With pockets full of shells!"])
 
 happy_birthday.sing_me_a_song()
 
