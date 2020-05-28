@@ -7,7 +7,7 @@ print(mystuff.tangerine)
 # define a class and call it with object
 class Mystuff(object):
 
-    def _init_(self):
+    def __init__(self):  # remember use double _ before and after init
         self.tangerine = "And now a thousand years between"
 
     def apple(self):
