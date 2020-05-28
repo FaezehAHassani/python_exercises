@@ -4,6 +4,7 @@ import mystuff
 mystuff.apple()
 print(mystuff.tangerine)
 
+# define a class and call it with object
 class Mystuff(object):
 
     def _init_(self):
@@ -11,3 +12,7 @@ class Mystuff(object):
 
     def apple(self):
         print("I AM CLASSY APPLES!")
+
+thing = Mystuff()
+thing.apple()
+print(thing.tangerine)
