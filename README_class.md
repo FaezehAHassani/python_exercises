@@ -16,3 +16,4 @@ print(mystuff.tangerine)
 
 - class is a blueprint that create an object and then you assign a variable to the object
 - "instantiate" means to create an object from a class
+- self.name makes an instance attribute otherwise only name may considered as a local variable
