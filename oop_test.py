@@ -4,7 +4,8 @@ import random
 from urllib.request import urlopen
 import sys
 
-WORD_URL = "http://learncodethehardway.org/words.text"
+#WORD_URL = "http://learncodethehardway.org/words.text" this url gives an error
+WORD_URL = open("words.txt", encoding = "utf-8")
 WORDS = []
 
 PHRASES = {
@@ -29,5 +30,5 @@ else:
     PHRASE_FIRST = False
 
 # load up the ords from the website
-for word in urlopen(WORD_URL).readlines():
-    WORDS.append(str(word.strip(), encoding = "utf-8"))
+for word in WORD_URL.readlines():  # replaced urlopen(WORDS) with WORD_URL
+    WORDS.append(str(word.strip())) # removed , encoding = "utf-8" from here and put it in line 8
