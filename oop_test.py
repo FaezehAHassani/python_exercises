@@ -21,3 +21,9 @@ PHRASES = {
 "***.*** = '***'":
  "from *** get the *** attricute and set it to '***'"
 }
+
+# do they want to drill phrases first
+if len(sys.argv) == 2 and sys.argv[1] == "english":
+    PHRASE_FIRST = True
+else:
+    PHRASE_FIRST = False
