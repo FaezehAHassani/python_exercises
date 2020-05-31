@@ -39,3 +39,8 @@ def convert(snippet, phrase):
     other_names = random.samples(WORDS, snippet.count("***"))
     results = []
     param_names = []
+
+    for i in range(0, snippet.count("@@@")):
+        param_count = random.randit(1,3)
+        param_names.append(', '.join(
+             random.sample(WORDS, param_count)))
