@@ -29,6 +29,13 @@ if len(sys.argv) == 2 and sys.argv[1] == "english":
 else:
     PHRASE_FIRST = False
 
-# load up the ords from the website
+# load up the words from the downloaded words.txt file
 for word in WORD_URL.readlines():  # replaced urlopen(WORDS) with WORD_URL
     WORDS.append(str(word.strip())) # removed , encoding = "utf-8" from here and put it in line 8
+
+def convert(snippet, phrase):
+    class_name = [w.capitalize() for w in
+        random.sample(WORDS, snippet.count("%%%"))]
+    other_names = random.samples(WORDS, snippet.count("***"))
+    results = []
+    param_names = []
