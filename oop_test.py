@@ -73,4 +73,12 @@ try:
             phrase = PHRASE[snippet]
             question, answer = convert(snippet, phrase)
             if PHRASE_FIRST:
-                question, answer = answer, question
+                questio, answer = answer, question
+
+            print(question)
+
+            input("> ")
+            print(f"ANSWER: {answer}\n\n")
+
+    except EOFError:
+        print("\nBye")
