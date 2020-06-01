@@ -62,3 +62,15 @@ def convert(snippet, phrase):
         results.append(result)
 
     return results
+
+# keep going until thery hit CTRL-D
+try:
+    while True:
+        snippets = list(PHRASES.keys())
+        random.shuffle(snippets)
+
+        for snippet in snippets:
+            phrase = PHRASE[snippet]
+            question, answer = convert(snippet, phrase)
+            if PHRASE_FIRST:
+                question, answer = answer, question
