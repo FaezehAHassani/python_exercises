@@ -70,7 +70,7 @@ try:
         random.shuffle(snippets)
 
         for snippet in snippets:
-            phrase = PHRASE[snippet]
+            phrase = PHRASES[snippet]
             question, answer = convert(snippet, phrase)
             if PHRASE_FIRST:
                 questio, answer = answer, question
@@ -80,5 +80,5 @@ try:
             input("> ")
             print(f"ANSWER: {answer}\n\n")
 
-    except EOFError:
+except EOFError:
         print("\nBye")
