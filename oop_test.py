@@ -54,3 +54,11 @@ def convert(snippet, phrase):
         # fake other class_names
         for word in other_names:
             result = result.replace("***", word, 1)
+
+        # fake parameter lists
+        for word in param_names:
+            result = result.replace("@@@", word, 1)
+
+        results.append(result)
+
+    return results
