@@ -34,14 +34,14 @@ for word in WORD_URL.readlines():  # replaced urlopen(WORDS) with WORD_URL
     WORDS.append(str(word.strip())) # removed , encoding = "utf-8" from here and put it in line 8
 
 def convert(snippet, phrase):
-    class_name = [w.capitalize() for w in
+    class_names = [w.capitalize() for w in
         random.sample(WORDS, snippet.count("%%%"))]
-    other_names = random.samples(WORDS, snippet.count("***"))
+    other_names = random.sample(WORDS, snippet.count("***"))
     results = []
     param_names = []
 
     for i in range(0, snippet.count("@@@")):
-        param_count = random.randit(1,3)
+        param_count = random.randint(1,3)
         param_names.append(', '.join(
              random.sample(WORDS, param_count)))
     for sentence in snippet, phrase:
@@ -73,7 +73,7 @@ try:
             phrase = PHRASES[snippet]
             question, answer = convert(snippet, phrase)
             if PHRASE_FIRST:
-                questio, answer = answer, question
+                question, answer = answer, question
 
             print(question)
 
