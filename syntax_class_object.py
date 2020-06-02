@@ -13,8 +13,20 @@ class Dog(Animal):
 class Person(object):
     def __init__(self, name):
         self.name = name
-        
+
 class Employee(Person):
     def __init__(self, name, salary):
         super(Employee, self).__init__(name) # The super() function in Python makes class inheritance more manageable and extensible. The function returns a temporary object that allows reference to a parent class by the keyword super.
         self.salary = salary
+
+class Fish(object):
+    pass
+
+class Salmon(Fish):
+    pass
+
+class Halibut(Fish):
+    pass
+
+# set rover to class Dog is-a "Rover" => rover is-a Dog
+rover = Dog("Rover")
