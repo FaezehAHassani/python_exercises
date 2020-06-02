@@ -18,7 +18,7 @@ class Person(object):
     def __init__(self, name):
         self.name = name
 
-class Employee(Person):
+class Employee(Person): # here Employee is a parent class and we use super to refer to one instance of this class
     def __init__(self, name, salary):
         super(Employee, self).__init__(name) # The super() function in Python makes class inheritance more manageable and extensible. The function returns a temporary object that allows reference to a parent class by the keyword super.
         self.salary = salary
