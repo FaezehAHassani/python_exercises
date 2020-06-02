@@ -30,3 +30,9 @@ class Halibut(Fish):
 
 # set rover to class Dog is-a "Rover" => rover is-a Dog
 rover = Dog("Rover")
+
+satan = Cat("Satan")
+
+mary = Person("Mary")
+
+mary.pet = satan
