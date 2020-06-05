@@ -14,6 +14,8 @@
 #   * The Bridge
 #   * Escape Pod
 
+# then add a litte test as the end
+
 class Scene(object): # Scene is-a object
     def enter(self):
         pass
@@ -54,3 +56,7 @@ class Map(object):
 
     def opening_scene(self):
         pass
+
+a_map = Map('central_corridor')
+a_game = Engine(a_map)
+a_game.play()
