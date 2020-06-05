@@ -26,3 +26,21 @@ class Engine(object):
         pass
 
 class Death(Scene): # Death is-a Scene
+   def enter(self):
+       pass
+
+class CentralCorridor(Scene):
+   def enter(self):
+       pass
+
+class LaserWeaponArmory(Scene):
+   def enter(self):
+       pass
+
+class TheBridge(Scene):
+   def enter(self):
+       pass
+
+class EscapePod(Scene): 
+   def enter(self):
+       pass
