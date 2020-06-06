@@ -18,7 +18,7 @@
 
 from sys import exit
 from random import randint
-from textwrap import dedand # this is for using """
+from textwrap import dedent # this is for using """
 
 class Scene(object): # Scene is-a object
     def enter(self):
