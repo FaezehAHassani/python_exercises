@@ -22,7 +22,9 @@ from textwrap import dedand # this is for using """
 
 class Scene(object): # Scene is-a object
     def enter(self):
-        pass
+        print("This scene is not yet configured.")
+        print("Subclass it and implement enter()")
+        exit(1) # exit(1) means there was some issue / error / problem and that is why the program is exiting. 
 
 class Engine(object):
     def __init__(self, scene_map):
