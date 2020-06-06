@@ -24,14 +24,15 @@ class Scene(object): # Scene is-a object
     def enter(self):
         print("This scene is not yet configured.")
         print("Subclass it and implement enter()")
-        exit(1) # exit(1) means there was some issue / error / problem and that is why the program is exiting. 
+        exit(1) # exit(1) means there was some issue / error / problem and that is why the program is exiting.
 
 class Engine(object):
     def __init__(self, scene_map):
-        pass
+        self.scene_map = scene_map
 
     def play(self):
-        pass
+        current_scene = self.scene_map.opening_scene()
+        last_scene = self.scene_map.next_scene('finished')
 
 class Death(Scene): # Death is-a Scene
    def enter(self):
