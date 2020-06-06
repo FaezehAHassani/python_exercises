@@ -38,6 +38,9 @@ class Engine(object):
             next_scene_name = current_scene.enter()
             current_scene = self.scene_map.next_scene(next_scene_name)
 
+            # print the last scene
+            current_scene.enter()
+
 class Death(Scene): # Death is-a Scene
    def enter(self):
        pass
