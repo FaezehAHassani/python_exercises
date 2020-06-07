@@ -70,25 +70,28 @@ class LaserWeaponArmory(Scene):
 
     if action == "shoot!":
         print(dedent("""
-            Quick on the draw you yank out your blaster and fire it at the Gothon...
+            Quick on the draw you yank
+            out your blaster and fire it at the Gothon...
             """))
-        return 'death'
+            #return 'dead'
+
+
 
     elif action == "dodge!":
-        print(dedent("""
-            Like a world class boxer you dodge, weave, slip and slide right as the Gothon's blaster cranks a laser past your head...
-            """))
-        return 'death'
+        print(dedent("""Like a world class
+        boxer you dodge, weave, slip and slide right
+        as the Gothon's blaster cranks a laser past your head...
+        """))
+        #return 'dead'
+
 
     elif action == "tell a joke!":
-        print(dedent("""
-            Lucky for you they made you learn Gothon insults in the academy...
-            """))
-        return 'laser_weapon_army'
+        print(dedent("""Lucky for you they made you learn Gothon insults in the academy..."""))
+        #return 'laser_weapon_army'
 
     else:
         print("DOES NOT CMPUTE!")
-        return 'central_corridor'
+        #return 'central_corridor'
 
 class TheBridge(Scene):
    def enter(self):
