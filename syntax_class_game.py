@@ -72,13 +72,15 @@ class LaserWeaponArmory(Scene):
         print(dedent("""
         Quick on the draw you yank out your blaster and fire it at the Gothon...
         """))
-    return 'death'
+
+        return 'death'
 
     elif action == "dodge!":
           print(dedent("""
           Like a world class boxer you dodge, weave, slip and slide right as the Gothon's blaster cranks a laser past your head...
           """))
-    return 'death'
+
+        return 'death'
 
 class TheBridge(Scene):
    def enter(self):
