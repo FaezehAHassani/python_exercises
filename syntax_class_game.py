@@ -18,7 +18,7 @@
 
 from sys import exit
 from random import randint
-from textwrap import dedent # this is for using """
+from textwrap import dedent  # this is for using """
 
 class Scene(object): # Scene is-a object
     def enter(self):
@@ -42,8 +42,17 @@ class Engine(object):
             current_scene.enter()
 
 class Death(Scene): # Death is-a Scene
-   def enter(self):
-       pass
+   quips =[
+       "You died. you kinda suck at this.",
+       "Your Mom would be proud...if she were smarter.",
+       "Such a luser.",
+       "I have a small puppy that's better at this.",
+       "You're worese than your Dad's jokes."
+    ]
+       def enter(self):
+           print(Death.quips[randint(0, len(self.quips)-1)])
+           exit(1)
+
 
 class CentralCorridor(Scene):
    def enter(self):
