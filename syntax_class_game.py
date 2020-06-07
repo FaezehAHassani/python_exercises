@@ -61,7 +61,15 @@ class CentralCorridor(Scene):
 
 class LaserWeaponArmory(Scene):
    def enter(self):
-       pass
+       print(dedent("""
+            The Gothons of Planet Percal #25 have invaded your ship and destroyed entire crew. you are the last surviving member...
+            """))
+    action = input("> ")
+
+    if action == "shoot!":
+        print(dedent("""
+        Quick on the draw you yank out your blaster and fire it at the Gothon...
+        """))
 
 class TheBridge(Scene):
    def enter(self):
