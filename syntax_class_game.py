@@ -90,8 +90,11 @@ class CentralCorridor(Scene):
 
 
         elif action == "tell a joke!":
-            print(dedent("""Lucky for you they made you learn Gothon insults in the academy..."""))
-            #return 'laser_weapon_army'
+            print(dedent("""
+                    Lucky for you they made you learn
+                    Gothon insults in the academy...
+                    """))
+            return 'laser_weapon_army'
 
         else:
             print("DOES NOT CMPUTE!")
