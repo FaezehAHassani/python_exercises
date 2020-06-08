@@ -54,44 +54,48 @@ class Death(Scene):   # Death is-a Scene
         print(Death.quips[randint(0, len(self.quips)-1)])
         exit(1)
 
-
-class CentralCorridor(Scene):
+class LaserWeaponArmory(Scene):
    def enter(self):
        pass
 
-class LaserWeaponArmory(Scene):
+class CentralCorridor(Scene):
     def enter(self):
         print(dedent("""
             The Gothons of Planet Percal #25 have invaded your ship and destroyed entire crew. you are the last surviving member...
             """))
 
-    action = input("> ")
-    print("Please choose shoot! or dodge!")
+        action = input("> ")
+        print("Please choose shoot! or dodge!")
 
-    if action == "shoot!":
-        print(dedent("""
-            Quick on the draw you yank
-            out your blaster and fire it at the Gothon...
-            """))
-            #return 'dead'
+        if action == "shoot!":
+            print(dedent("""
+                    Quick on the draw you yank out your blaster and fire
+                    it at the Gothon. His clown costume is flowing and
+                    moving around his body, which throws off your aim.
+                    Your laser hits his costume but misses him entirely.
+                    This completely ruins his brand new costume his mother
+                    bought him, which makes him fly into an insane rage
+                    and blast you repeatedly in the face until you are
+                    dead. Then he eats you.
+                    """))
+            return 'death'
+
+        elif action == "dodge!":
+            print(dedent("""
+                    Like a world class
+                    boxer you dodge, weave, slip and slide right
+                    as the Gothon's blaster cranks a laser past your head...
+                    """))
+            return 'dead'
 
 
+        elif action == "tell a joke!":
+            print(dedent("""Lucky for you they made you learn Gothon insults in the academy..."""))
+            #return 'laser_weapon_army'
 
-    elif action == "dodge!":
-        print(dedent("""Like a world class
-        boxer you dodge, weave, slip and slide right
-        as the Gothon's blaster cranks a laser past your head...
-        """))
-        #return 'dead'
-
-
-    elif action == "tell a joke!":
-        print(dedent("""Lucky for you they made you learn Gothon insults in the academy..."""))
-        #return 'laser_weapon_army'
-
-    else:
-        print("DOES NOT CMPUTE!")
-        #return 'central_corridor'
+        else:
+            print("DOES NOT CMPUTE!")
+            #return 'central_corridor'
 
 class TheBridge(Scene):
    def enter(self):
