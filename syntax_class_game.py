@@ -98,7 +98,7 @@ class CentralCorridor(Scene):
 
         else:
             print("DOES NOT CMPUTE!")
-            #return 'central_corridor'
+            return 'central_corridor'
 
 class TheBridge(Scene):
    def enter(self):
