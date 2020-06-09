@@ -56,7 +56,12 @@ class Death(Scene):   # Death is-a Scene
 
 class LaserWeaponArmory(Scene):
    def enter(self):
-       pass
+       print(dedent("""
+               You do a dive roll into the Weapon Armory,
+               crouch and scan the room for
+               more Gothons that might be hiding....
+               """))
+        code = f"{randint(1, 9)}{randint(1,9)}{randint(1,9)}"   
 
 class CentralCorridor(Scene):
     def enter(self):
