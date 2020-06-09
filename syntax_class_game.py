@@ -61,9 +61,9 @@ class LaserWeaponArmory(Scene):
                crouch and scan the room for
                more Gothons that might be hiding....
                """))
-       code = f"{randint(1, 9)}{randint(1,9)}{randint(1,9)}"
+       code = f"{randint(1, 9)}{randint(1,9)}{randint(1,9)}"  # randint(a, b) => Return a random integer N such that a <= N <= b. Alias for randrange(a, b+1).
        guess = input("[keypad]> ")
-       guesses = 0   
+       guesses = 0
 
 class CentralCorridor(Scene):
     def enter(self):
