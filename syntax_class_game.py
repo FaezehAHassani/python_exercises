@@ -65,16 +65,23 @@ class LaserWeaponArmory(Scene):
        guess = input("[keypad]> ")
        guesses = 0
 
-       while guess =! code and guesses < 10:
+       while guess != code and guesses < 10:
            print("BZZZZEDDDD!")
            guesses += 1
            guess = input("[keypad]> ")
 
+       if guess == code:
+           print(dedent("""
+                   The container clickes open and the seal breaks,
+                   letting gas out. You grab the nuetron bomb and run as fast as
+                   you can to bridge where you must place it in thenright spot.
+                   """))
+
 class CentralCorridor(Scene):
     def enter(self):
         print(dedent("""
-            The Gothons of Planet Percal #25 have invaded your ship and destroyed entire crew. you are the last surviving member...
-            """))
+                The Gothons of Planet Percal #25 have invaded your ship and destroyed entire crew. you are the last surviving member...
+                """))
 
         action = input("> ")
         print("Please choose shoot! or dodge!")
