@@ -76,6 +76,15 @@ class LaserWeaponArmory(Scene):
                    letting gas out. You grab the nuetron bomb and run as fast as
                    you can to bridge where you must place it in thenright spot.
                    """))
+           return 'the_bridge'
+
+       else:
+           print(dedent("""
+                   The lock buzzes one last time and then
+                   you hear a sickening melting sound as the mechanism is
+                   fused together....
+                   """))
+           return 'death'
 
 class CentralCorridor(Scene):
     def enter(self):
