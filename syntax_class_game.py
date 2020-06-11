@@ -146,6 +146,14 @@ class TheBridge(Scene):
                    """))
            return 'death'
 
+       elif action == 'slowly place the bomb':
+           print(dedent("""
+                   You point your blaster at the bomb under
+                   your arm and the Gothons put their hands up and
+                   start to sweat....
+                   """))
+           return 'escape_pod'
+
 class EscapePod(Scene):
    def enter(self):
        pass
