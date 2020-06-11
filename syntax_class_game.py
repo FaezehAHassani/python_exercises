@@ -138,6 +138,14 @@ class TheBridge(Scene):
                """))
        action = input("> ")
 
+       if action == "throw the bomb":
+           print(dedent("""
+                   In a panic you throw the bomp at
+                   the group of Gothons and
+                   make a leap for the door....
+                   """))
+           return 'death'
+
 class EscapePod(Scene):
    def enter(self):
        pass
