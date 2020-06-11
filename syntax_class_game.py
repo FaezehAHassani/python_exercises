@@ -130,7 +130,13 @@ class CentralCorridor(Scene):
 
 class TheBridge(Scene):
    def enter(self):
-       pass
+       print(dedent("""
+               You burst onto the bridge with thr nuetron
+               destruct bomb under your arm around
+               surprise 5 Gothons who are trying
+               to take control of the ship...
+               """))
+       action = input("> ")
 
 class EscapePod(Scene):
    def enter(self):
