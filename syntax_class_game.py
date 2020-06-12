@@ -196,15 +196,15 @@ class Map(object):
        'finished': Finished()
     }
 
-
     def __init__(self, start_scene):
-        pass
+        self.start_scene = start_scene
 
     def next_scene(self, scene_name):
-        pass
+        val = Map.scenes.get(scene_name)
+        return val
 
     def opening_scene(self):
-        pass
+        return self.next_scene(self.start_scene)
 
 # a little test
 a_map = Map('central_corridor')
