@@ -168,6 +168,20 @@ class EscapePod(Scene):
        good_pod = randint(1,5)
        guess = input("[pod #]> ")
 
+       if int(guess) =! good_pod:
+           print(dedent("""
+                   You jump into pod {guess} and hit
+                   the eject button...
+                   """))
+           return 'death'
+       else:
+           print(dedent("""
+                    You jump into pod {guess} and hits
+                    the eject button....
+                    """))
+           retuen 'finished'
+
+
 class Map(object):
     def __init__(self, start_scene):
         pass
