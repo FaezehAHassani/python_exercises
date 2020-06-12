@@ -187,6 +187,16 @@ class Finished(Scene):
         return 'finished'
 
 class Map(object):
+    scenes = {
+       'central_corridor': CentralCorridor(),
+       'laser_weapon_army': LaserWeaponArmory(),
+       'the_bridge': TheBridge(),
+       'escape_pod': EscapePod(),
+       'death': Death(),
+       'finished': Finished(),
+    }
+
+
     def __init__(self, start_scene):
         pass
 
