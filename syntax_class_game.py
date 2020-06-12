@@ -60,7 +60,7 @@ class CentralCorridor(Scene):
                 The Gothons of Planet Percal #25 have invaded your ship and destroyed entire crew. you are the last surviving member...
                 """))
 
-        action = input("Please choose shoot! or dodge! > ")
+        action = input("Please choose shoot! or dodge!> ")
 
         if action == "shoot!":
             print(dedent("""
@@ -135,7 +135,7 @@ class TheBridge(Scene):
                surprise 5 Gothons who are trying
                to take control of the ship...
                """))
-       action = input("> ")
+       action = input("Please choose throw the bomb or throw the bomb> ")
 
        if action == "throw the bomb":
            print(dedent("""
@@ -145,7 +145,7 @@ class TheBridge(Scene):
                    """))
            return 'death'
 
-       elif action == 'slowly place the bomb':
+       elif action == 'throw the bomb':
            print(dedent("""
                    You point your blaster at the bomb under
                    your arm and the Gothons put their hands up and
