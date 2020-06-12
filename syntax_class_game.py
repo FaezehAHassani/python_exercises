@@ -38,11 +38,11 @@ class Engine(object):
             next_scene_name = current_scene.enter()
             current_scene = self.scene_map.next_scene(next_scene_name)
 
-            # print the last scene
-            current_scene.enter()
+         # print the last scene
+        current_scene.enter()
 
 class Death(Scene):   # Death is-a Scene
-    quips =[
+    quips = [
        "You died. you kinda suck at this.",
        "Your Mom would be proud...if she were smarter.",
        "Such a luser.",
@@ -53,38 +53,6 @@ class Death(Scene):   # Death is-a Scene
     def enter(self):
         print(Death.quips[randint(0, len(self.quips)-1)])
         exit(1)
-
-class LaserWeaponArmory(Scene):
-   def enter(self):
-       print(dedent("""
-               You do a dive roll into the Weapon Armory,
-               crouch and scan the room for
-               more Gothons that might be hiding....
-               """))
-       code = f"{randint(1, 9)}{randint(1,9)}{randint(1,9)}"  # randint(a, b) => Return a random integer N such that a <= N <= b. Alias for randrange(a, b+1).
-       guess = input("[keypad]> ")
-       guesses = 0
-
-       while guess != code and guesses < 10:
-           print("BZZZZEDDDD!")
-           guesses += 1
-           guess = input("[keypad]> ")
-
-       if guess == code:
-           print(dedent("""
-                   The container clickes open and the seal breaks,
-                   letting gas out. You grab the nuetron bomb and run as fast as
-                   you can to bridge where you must place it in thenright spot.
-                   """))
-           return 'the_bridge'
-
-       else:
-           print(dedent("""
-                   The lock buzzes one last time and then
-                   you hear a sickening melting sound as the mechanism is
-                   fused together....
-                   """))
-           return 'death'
 
 class CentralCorridor(Scene):
     def enter(self):
@@ -127,6 +95,38 @@ class CentralCorridor(Scene):
             print("DOES NOT CMPUTE!")
             return 'central_corridor'
 
+class LaserWeaponArmory(Scene):
+    def enter(self):
+         print(dedent("""
+                 You do a dive roll into the Weapon Armory,
+                 crouch and scan the room for
+                 more Gothons that might be hiding....
+                 """))
+         code = f"{randint(1, 9)}{randint(1,9)}{randint(1,9)}"  # randint(a, b) => Return a random integer N such that a <= N <= b. Alias for randrange(a, b+1).
+         guess = input("[keypad]> ")
+         guesses = 0
+
+         while guess != code and guesses < 10:
+             print("BZZZZEDDDD!")
+             guesses += 1
+             guess = input("[keypad]> ")
+
+         if guess == code:
+             print(dedent("""
+                   The container clickes open and the seal breaks,
+                   letting gas out. You grab the nuetron bomb and run as fast as
+                   you can to bridge where you must place it in thenright spot.
+                   """))
+             return 'the_bridge'
+
+         else:
+           print(dedent("""
+                   The lock buzzes one last time and then
+                   you hear a sickening melting sound as the mechanism is
+                   fused together....
+                   """))
+           return 'death'
+
 class TheBridge(Scene):
    def enter(self):
        print(dedent("""
@@ -156,24 +156,25 @@ class TheBridge(Scene):
        else:
            print("DOES NOT COMPUTE!")
            return 'the_bridge'
-
+           
 class EscapePod(Scene):
-   def enter(self):
-       print(dedent("""
+    def enter(self):
+        print(dedent("""
                 You rush through the ship desperately
                 trying to make it to the escape pod before
                 the whole ship explodes...
                 """))
-       good_pod = randint(1,5)
-       guess = input("[pod #]> ")
+        good_pod = randint(1,5)
+        guess = input("[pod #]> ")
 
-       if int(guess) != good_pod:
-           print(dedent("""
+        if int(guess) != good_pod:
+            print(dedent("""
                    You jump into pod {guess} and hit
                    the eject button...
                    """))
-           return 'death'
-       else:
+            return 'death'
+
+        else:
            print(dedent("""
                     You jump into pod {guess} and hits
                     the eject button....
