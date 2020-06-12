@@ -41,7 +41,7 @@ class Engine(object):
          # print the last scene
         current_scene.enter()
 
-class Death(Scene):   # Death is-a Scene
+class Death(Scene): # Death is-a Scene
     quips = [
        "You died. you kinda suck at this.",
        "Your Mom would be proud...if she were smarter.",
@@ -81,7 +81,7 @@ class CentralCorridor(Scene):
                     boxer you dodge, weave, slip and slide right
                     as the Gothon's blaster cranks a laser past your head...
                     """))
-            return 'dead'
+            return 'death'
 
 
         elif action == "tell a joke!":
@@ -156,7 +156,7 @@ class TheBridge(Scene):
        else:
            print("DOES NOT COMPUTE!")
            return 'the_bridge'
-           
+
 class EscapePod(Scene):
     def enter(self):
         print(dedent("""
