@@ -160,7 +160,13 @@ class TheBridge(Scene):
 
 class EscapePod(Scene):
    def enter(self):
-       pass
+       print(dedent("""
+                You rush through the ship desperately
+                trying to make it to the escape pod before
+                the whole ship explodes...
+                """))
+        good_pod = randint(1,5)
+        guess = input("[pod #]> ")
 
 class Map(object):
     def __init__(self, start_scene):
