@@ -92,8 +92,7 @@ class CentralCorridor(Scene):
                 The Gothons of Planet Percal #25 have invaded your ship and destroyed entire crew. you are the last surviving member...
                 """))
 
-        action = input("> ")
-        print("Please choose shoot! or dodge!")
+        action = input("Please choose shoot! or dodge! > ")
 
         if action == "shoot!":
             print(dedent("""
