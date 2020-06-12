@@ -193,7 +193,7 @@ class Map(object):
        'the_bridge': TheBridge(),
        'escape_pod': EscapePod(),
        'death': Death(),
-       'finished': Finished(),
+       'finished': Finished()
     }
 
 
