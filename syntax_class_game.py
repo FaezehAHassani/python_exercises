@@ -135,7 +135,7 @@ class TheBridge(Scene):
                surprise 5 Gothons who are trying
                to take control of the ship...
                """))
-       action = input("Please choose throw the bomb or throw the bomb> ")
+       action = input("Please choose 'throw the bomb' or 'slowly place the bomb' or whatever you like> ")
 
        if action == "throw the bomb":
            print(dedent("""
@@ -145,7 +145,7 @@ class TheBridge(Scene):
                    """))
            return 'death'
 
-       elif action == 'throw the bomb':
+       elif action == 'slowly place the bomb':
            print(dedent("""
                    You point your blaster at the bomb under
                    your arm and the Gothons put their hands up and
