@@ -102,7 +102,7 @@ class LaserWeaponArmory(Scene):
                  crouch and scan the room for
                  more Gothons that might be hiding....
                  """))
-         code = f"{randint(1, 9)}{randint(1,9)}{randint(1,9)}"  # randint(a, b) => Return a random integer N such that a <= N <= b. Alias for randrange(a, b+1).
+         code = f"{randint(1, 9)}{randint(1,9)}{randint(1,9)}"  # randint(a, b) => Return a random integer N such that a <= N <= b. Alias for randrange(a, b+1). NOTE: each time it produces a 3-digit number and each number between 1 and 10
          guess = input("[keypad]> ")
          guesses = 0
 
