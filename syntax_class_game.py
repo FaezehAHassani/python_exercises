@@ -60,7 +60,7 @@ class CentralCorridor(Scene):
                 The Gothons of Planet Percal #25 have invaded your ship and destroyed entire crew. you are the last surviving member...
                 """))
 
-        action = input("Please choose shoot! or dodge! or tell a joke!> ")
+        action = input("Please choose 'shoot!' or 'dodge!' or 'tell a joke!' or whatever you like> ")
 
         if action == "shoot!":
             print(dedent("""
@@ -92,7 +92,7 @@ class CentralCorridor(Scene):
             return 'laser_weapon_army'
 
         else:
-            print("DOES NOT CMPUTE!")
+            print("DOES NOT COMPUTE!")
             return 'central_corridor'
 
 class LaserWeaponArmory(Scene):
