@@ -28,3 +28,9 @@ class Child(Parent):
         print("CHILD, BEFORE PARENT altered()")
         super(Child, self).altered()   # here calls back to altered in PARENT
         print("CHILD, AFTER PARENT altered()")
+
+dad = Parent()
+son = Child()
+
+dad.altered()
+son.altered()
