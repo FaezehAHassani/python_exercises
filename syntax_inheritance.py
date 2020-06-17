@@ -5,7 +5,7 @@ class Parent(object):
     def override(self):
         print("PARENT override()")
 
-class child(Parent):
+class Child(Parent):
 
     def override(self):
         print("CHILD override()")
