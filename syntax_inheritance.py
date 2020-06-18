@@ -45,3 +45,11 @@ class Other(object):
 
     def altered(self):
         perint("OTHER altered()")
+
+class Child(object):
+
+    def __init__(self):
+        self.other = other()
+
+    def implicit(self):
+        self.other.implicit()
