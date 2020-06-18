@@ -62,7 +62,7 @@ class Child(object):
         self.other.altered()
         print("CHILD, AFTER OTHER altered()")
 
-son = child()
+son = Child()
 
 son.implicit()
 son.override()
