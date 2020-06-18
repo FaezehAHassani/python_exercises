@@ -35,6 +35,8 @@ son.override()
 dad.altered()
 son.altered()
 
+# composition
+
 class Other(object):
 
     def override(self):
