@@ -44,7 +44,7 @@ class Other(object):
         print("OTHER implicit()")
 
     def altered(self):
-        perint("OTHER altered()")
+        print("OTHER altered()")
 
 class Child(object):
 
