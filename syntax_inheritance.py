@@ -49,7 +49,7 @@ class Other(object):
 class Child(object):
 
     def __init__(self):
-        self.other = other()
+        self.other = Other()
 
     def implicit(self):
         self.other.implicit()
