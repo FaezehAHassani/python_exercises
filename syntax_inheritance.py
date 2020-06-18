@@ -53,3 +53,9 @@ class Child(object):
 
     def implicit(self):
         self.other.implicit()
+
+    def override(self):
+        print("CHILD override()")
+
+    def altered(self):
+        print("CHILD, BEFORE OTHER altered()")
