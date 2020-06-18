@@ -34,3 +34,14 @@ son.override()
 
 dad.altered()
 son.altered()
+
+class Other(object):
+
+    def override(self):
+        print("OTHER overide()")
+
+    def implicit(self):
+        print("OTHER implicit()")
+
+    def altered(self):
+        perint("OTHER altered()")
