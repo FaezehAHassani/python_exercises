@@ -26,16 +26,31 @@ class Hall(object): # Scene is-a object
         action = input("There is two doors, which door you choose DoorA or DoorB? > ")
 
         if action == "DoorA":
-            print("Here you face th evil, what you do?")
+            print("Here you face the evil, what do you do?")
             fight = print("Please choose, I fight Barehand or InfiniteCry >")
 
+            if fight == "Braehand":
+                print("You hit the evil back and force until it dies!")
+                return 'gold_coins'
 
-        elif action == "dodge!":
-            print(dedent("""
-                    Like a world class
-                    boxer you dodge, weave, slip and slide right
-                    as the Gothon's blaster cranks a laser past your head...
-                    """))
+            elif fight == "InfiniteCry":
+                print("You cry infinitely and the evil sinks in your tears.")
+                return 'gole_coins'
+
+        elif action == "DoorB":
+            print("You should select your weapon, do you choose Sword or Gun")
+
+            if fight == "Swoerd":
+    print("You hit the evil back and force until it dies!")
+    return 'gold_coins'
+
+elif fight == "InfiniteCry":
+    print("You cry infinitely and the evil sinks in your tears.")
+    return 'gole_coins'
+
+
+
+
             return 'death'
 
 
