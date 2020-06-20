@@ -24,7 +24,7 @@ class Hall(object):
             print("Here you face the evil, what do you do?")
             fight = print("Please choose, I fight Barehand or InfiniteCry >")
 
-            if fight == "Braehand":
+            if fight == "Barehand":
                 print("You hit the evil back and force until it dies!")
                 return 'gold_coins'
 
