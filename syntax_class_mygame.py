@@ -75,6 +75,6 @@ class Map(object):
         return self.next_scene(self.start_scene)
 
 # a little test
-a_map = Map('central_corridor')
-a_game = Engine(a_map)
+a_map = Map('evil_room')
+a_game = Hall(a_map)
 a_game.play()
