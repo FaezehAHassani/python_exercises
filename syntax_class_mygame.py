@@ -58,20 +58,10 @@ class EvilRoom(Scene):
         print("You shot the evil, well done!")
         return 'evil_room'
 
-
-
-
-
-
-
 class Map(object):
     scenes = {
        'gold_coins': GoldCoins(),
-       'laser_weapon_army': LaserWeaponArmory(),
-       'the_bridge': TheBridge(),
-       'escape_pod': EscapePod(),
-       'death': Death(),
-       'finished': Finished()
+       'evil_room': EvilRoom()
     }
 
     def __init__(self, start_scene):
