@@ -47,14 +47,14 @@ class GoldCoins(Scene):
     print("You did a good job, this bag of 100 gold coins bbelongs to you!")
 
 class EvilRoom(Scene):
-        print("Here you face the evil, what do you do?")
-        fightsmart = print("Please choose, I fight with Sword or Gun >")
+    print("Here you face the evil, what do you do?")
+    fightsmart = print("Please choose, I fight with Sword or Gun >")
 
-        if fightsmart == "Sword":
+    if fightsmart == "Sword":
             print("You kill the evil with your strong sword!")
             return 'evil_room'
 
-        elif fightsmart == "Gun":
+    elif fightsmart == "Gun":
             print("You shot the evil, well done!")
             return 'evil_room'
 
