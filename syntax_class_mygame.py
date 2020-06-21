@@ -12,7 +12,6 @@
 #   * Gold coins
 
 from sys import exit
-from textwrap import dedent
 
 class Hall(object):
     def enter(self):
@@ -51,12 +50,12 @@ class EvilRoom(Scene):
     fightsmart = print("Please choose, I fight with Sword or Gun >")
 
     if fightsmart == "Sword":
-            print("You kill the evil with your strong sword!")
-            return 'evil_room'
+        print("You kill the evil with your strong sword!")
+        return 'evil_room'
 
     elif fightsmart == "Gun":
-            print("You shot the evil, well done!")
-            return 'evil_room'
+        print("You shot the evil, well done!")
+        return 'evil_room'
 
 class Map(object):
     scenes = {
