@@ -30,7 +30,7 @@ class Hall(object):
 
             elif fight == "InfiniteCry":
                 print("You cry infinitely and the evil sinks in your tears.")
-                return 'gole_coins'
+                return 'gold_coins'
 
         elif action == "DoorB":
             print("You should select your weapon, do you choose Sword or Gun")
