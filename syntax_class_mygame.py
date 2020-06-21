@@ -50,11 +50,11 @@ class EvilRoom(Scene):
     print("Here you face the evil, what do you do?")
     fightsmart = print("Please choose, I fight with Sword or Gun >")
 
-    if fight == "Sword":
+    if fightsmart == "Sword":
         print("You kill the evil with your strong sword!")
         return 'evil_room'
 
-    elif fight == "Gun":
+    elif fightsmart == "Gun":
         print("You shot the evil, well done!")
         return 'evil_room'
 
