@@ -41,13 +41,13 @@ class Hall(Scene):
 
         if action == "DoorA":
             print("Here you face the evil, what do you do?")
-            fight = input("Please choose, I fight Barehand or InfiniteCry >")
+            fight = input("Please choose, I fight Barehand or Infinitecry >")
 
             if fight == "Barehand":
                 print("You hit the evil back and force until it dies!")
                 return 'gold_coins'
 
-            elif fight == "InfiniteCry":
+            elif fight == "Infinitecry":
                 print("You cry infinitely and the evil sinks in your tears.")
                 return 'gold_coins'
 
