@@ -11,8 +11,6 @@
 #      Gun
 #   * Gold coins
 
-from sys import exit
-
 class Hall(object):
     def enter(self):
         print("Welcome to my Gold Coins game.")
