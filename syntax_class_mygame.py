@@ -25,7 +25,7 @@ class Engine(object):
 
     def play(self):
         current_scene = self.scene_map.opening_scene()
-        last_scene = self.scene_map.next_scene('finished')
+        last_scene = self.scene_map.next_scene('evil_room')
 
         while current_scene != last_scene:
             next_scene_name = current_scene.enter()
@@ -97,5 +97,5 @@ class Map(object):
 
 # a little test
 a_map = Map('evil_room')
-a_game = Hall(a_map)
+a_game = Engine(a_map)
 a_game.play()
