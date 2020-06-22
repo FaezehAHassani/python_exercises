@@ -68,14 +68,13 @@ class GoldCoins(Scene):
 
 class EvilRoom(Scene):
     def enter(self):
-        print("Here you face the evil, what do you do?")
-        fightsmart = input("Please choose, I fight with Sword or Gun >")
+        print(f"You use your {equipment} to figth the evil.")
 
-        if fightsmart == "Sword":
+        if equipment == "Sword":
             print("You kill the evil with your strong sword!")
             return 'gold_coins'
 
-        elif fightsmart == "Gun":
+        elif equipment == "Gun":
             print("You shot the evil, well done!")
             return 'gold_coins'
 
