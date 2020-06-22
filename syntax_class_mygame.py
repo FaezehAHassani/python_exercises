@@ -41,7 +41,7 @@ class Hall(Scene):
 
         if action == "DoorA":
             print("Here you face the evil, what do you do?")
-            fight = print("Please choose, I fight Barehand or InfiniteCry >")
+            fight = input("Please choose, I fight Barehand or InfiniteCry >")
 
             if fight == "Barehand":
                 print("You hit the evil back and force until it dies!")
@@ -52,13 +52,13 @@ class Hall(Scene):
                 return 'gold_coins'
 
         elif action == "DoorB":
-            print("You should select your weapon, do you choose Sword or Gun")
+            equipment = input("You should select your weapon, do you choose Sword or Gun")
 
-            if fight == "Sword":
+            if equipment == "Sword":
                 print("You are well equipped now, you have a strong sword!")
                 return 'evil_room'
 
-            elif fight == "Gun":
+            elif equipment == "Gun":
                 print("You are smart, you have a nice gun now!")
                 return 'evil_room'
 
