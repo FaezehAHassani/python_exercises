@@ -11,6 +11,14 @@
 #      Gun
 #   * Gold coins
 
+from sys import exit
+
+class Scene(object): 
+    def enter(self):
+        print("This scene is not yet configured.")
+        print("Subclass it and implement enter()")
+        exit(1)
+
 class Hall(object):
     def enter(self):
         print("Welcome to my Gold Coins game.")
