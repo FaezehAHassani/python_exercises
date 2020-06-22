@@ -25,7 +25,7 @@ class Engine(object):
 
     def play(self):
         current_scene = self.scene_map.opening_scene()
-        last_scene = self.scene_map.next_scene('evil_room')
+        last_scene = self.scene_map.next_scene('gold_coins')
 
         while current_scene != last_scene:
             next_scene_name = current_scene.enter()
@@ -52,7 +52,7 @@ class Hall(Scene):
                 return 'gold_coins'
 
         elif action == "DoorB":
-            equipment = input("You should select your weapon, do you choose Sword or Gun")
+            equipment = input("You should select your weapon, do you choose Sword or Gun? >")
 
             if equipment == "Sword":
                 print("You are well equipped now, you have a strong sword!")
@@ -73,11 +73,11 @@ class EvilRoom(Scene):
 
         if fightsmart == "Sword":
             print("You kill the evil with your strong sword!")
-            return 'evil_room'
+            return 'gold_coins'
 
         elif fightsmart == "Gun":
             print("You shot the evil, well done!")
-            return 'evil_room'
+            return 'gold_coins'
 
 class Map(object):
     scenes = {
