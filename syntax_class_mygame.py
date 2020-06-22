@@ -41,9 +41,11 @@ class Hall(object):
                 return 'evil_room'
 
 class GoldCoins(Scene):
-    print("You did a good job, this bag of 100 gold coins belongs to you!")
+    def enter(self):
+        print("You did a good job, this bag of 100 gold coins belongs to you!")
 
 class EvilRoom(Scene):
+    def enter(self):
         print("Here you face the evil, what do you do?")
         fightsmart = print("Please choose, I fight with Sword or Gun >")
 
