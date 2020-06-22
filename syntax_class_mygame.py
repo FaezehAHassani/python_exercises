@@ -69,7 +69,7 @@ class GoldCoins(Scene):
 class EvilRoom(Scene):
     def enter(self):
         print("Here you face the evil, what do you do?")
-        fightsmart = print("Please choose, I fight with Sword or Gun >")
+        fightsmart = input("Please choose, I fight with Sword or Gun >")
 
         if fightsmart == "Sword":
             print("You kill the evil with your strong sword!")
@@ -81,6 +81,7 @@ class EvilRoom(Scene):
 
 class Map(object):
     scenes = {
+       'hall': Hall(),
        'gold_coins': GoldCoins(),
        'evil_room': EvilRoom()
     }
@@ -96,6 +97,6 @@ class Map(object):
         return self.next_scene(self.start_scene)
 
 # a little test
-a_map = Map('evil_room')
+a_map = Map('hall')
 a_game = Engine(a_map)
 a_game.play()
