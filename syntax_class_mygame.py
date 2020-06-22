@@ -33,7 +33,7 @@ class Hall(object):
             print("You should select your weapon, do you choose Sword or Gun")
 
             if fight == "Sword":
-                print("You are well equipeed now, you have a strong sword!")
+                print("You are well equipped now, you have a strong sword!")
                 return 'evil_room'
 
             elif fight == "Gun":
@@ -41,19 +41,19 @@ class Hall(object):
                 return 'evil_room'
 
 class GoldCoins(Scene):
-    print("You did a good job, this bag of 100 gold coins bbelongs to you!")
+    print("You did a good job, this bag of 100 gold coins belongs to you!")
 
 class EvilRoom(Scene):
-    print("Here you face the evil, what do you do?")
-    fightsmart = print("Please choose, I fight with Sword or Gun >")
+        print("Here you face the evil, what do you do?")
+        fightsmart = print("Please choose, I fight with Sword or Gun >")
 
-    if fightsmart == "Sword":
-        print("You kill the evil with your strong sword!")
-        return 'evil_room'
+        if fightsmart == "Sword":
+            print("You kill the evil with your strong sword!")
+            return 'evil_room'
 
-    elif fightsmart == "Gun":
-        print("You shot the evil, well done!")
-        return 'evil_room'
+        elif fightsmart == "Gun":
+            print("You shot the evil, well done!")
+            return 'evil_room'
 
 class Map(object):
     scenes = {
