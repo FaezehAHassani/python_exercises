@@ -11,4 +11,9 @@ config = {
     'author_email' : 'faezeh@go.com',
     'version' : '0.1',
     'instal_requires' : ['nose'],
+    'packages' : ['NAME'],
+    'scripts' : [],
+    'name' : 'projectname'
 }
+
+setup(**config)
