@@ -17,3 +17,9 @@ $ . ~/.venvs/lpthw/bin/activate
 (lpthw) Faezehs-MacBook-Pro:skeleton faezeh$ mkdir bin FAEZEH tests docs
 (lpthw) Faezehs-MacBook-Pro:skeleton faezeh$ touch FAEZEH/__init__.py
 (lpthw) Faezehs-MacBook-Pro:skeleton faezeh$ touch tests/__init__.py
+
+
+# check if "nose" is installed
+$ python3.7
+>>> help('modules')
+# this lists all the modules, if nose is not there do the following
