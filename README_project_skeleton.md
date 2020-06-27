@@ -22,4 +22,5 @@ $ . ~/.venvs/lpthw/bin/activate
 # check if "nose" is installed
 $ python3.7
 >>> help('modules')
-# this lists all the modules, if nose is not there do the following
+# this lists all the modules, if nose is not there do the following in terminal, main depository
+$ pip install nose
